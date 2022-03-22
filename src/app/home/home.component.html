@@ -1,0 +1,49 @@
+
+<div 
+    class="container overflow-auto"
+    data-bs-spy="scroll" 
+    data-bs-target="#navbar-example">
+    <div class="row" data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+        <div class="card border border-white"> 
+            <div class="card-body">
+                <h3 style="text-align: center;">
+                    South Africa National Lottery
+                    <h4>Lotto | PowerBall Number Builder</h4>
+                    <h6>✝ For Christians ✝</h6>
+                </h3>
+            </div>
+        </div>
+
+        <div class="card border border-white">
+            <div class="card-body">
+                <h4>
+                    Proverbs 16:33
+                </h4>
+                <p>
+                    The lot is cast into the lap, <br>
+                    But its every decision is from the Lord.
+                </p>
+            </div>
+        </div>
+
+        <div class="card border border-white">
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <button 
+                        class="btn btn-primary" 
+                        type="button"
+                        (click)="onPlayNow()">
+                        <span>Build Your Number Now</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+        <div class="card border border-white">
+            <div class="card-body" style="text-align: center;">
+                <span style="color: red; font-weight: 600;">{{ newLottoNumber }}{{ newPowerBallNumber }}{{ lottoDayError }}</span>
+            </div>
+        </div>
+    </div>
+</div>
